@@ -1,0 +1,10 @@
+html {
+  background-color: #FFC107;
+}
+
+.app {
+  width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
