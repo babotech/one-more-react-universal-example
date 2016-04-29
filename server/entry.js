@@ -1,10 +1,8 @@
-import './intl-polyfill'
-
-import appRoute from './app'
 import asset from './asset'
 import config from 'config'
 import express from 'express'
 import morgan from 'morgan'
+import router from './router'
 
 const app = express()
 
@@ -13,7 +11,7 @@ app.use(`/assets`, express.static(config.dist))
 
 app.locals.asset = asset
 
-app.use(`/:locale`, appRoute)
+app.use(router)
 
 module.exports = (port) => {
     app.listen(port, () => {

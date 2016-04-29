@@ -2,8 +2,8 @@ var config = require('config')
 
 require('babel-register')({
     ignore: [
-        /AppServer/,// prevent recompilation
+        /routes/,// prevent recompilation
         /node_modules/
     ]
 })
-require('../server/bootstrap')(config.port)
+require('../server/entry')(config.port)
