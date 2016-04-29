@@ -1,10 +1,20 @@
-html {
-  background-color: #FFC107;
+@import url(https://fonts.googleapis.com/css?family=Roboto:700);
+
+html, body, .app, #app  {
+  width: 100%;
+  height: 100%;
 }
 
 .app {
-  width: 860px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+  animation: AnimationName 6s ease infinite;
+
+  background: linear-gradient(225deg, #fff306, #e8c605, #ffc107, #e89805, #ff8b06);
+  background-color: #FFC107;
+  background-size: 1000% 1000%;
+}
+
+@keyframes AnimationName {
+    0%{background-position:11% 0%}
+    50%{background-position:90% 100%}
+    100%{background-position:11% 0%}
 }

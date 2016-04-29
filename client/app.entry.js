@@ -10,7 +10,5 @@ import {ready} from 'react-intlable'
 const localeUrl = locales[window.__LOCALE__]
 
 ready(localeUrl, () => {
-    window.twttr.ready(() =>
-        ReactDOM.render(<AppContainer />, document.getElementById(`app`)))
+    ReactDOM.render(<AppContainer />, document.getElementById(`app`))
 }, true)
-

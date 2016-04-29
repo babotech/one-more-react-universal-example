@@ -1,4 +1,4 @@
-FROM node:5.6
+FROM node:6.0
 
 EXPOSE  7000
 
