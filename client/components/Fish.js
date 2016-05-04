@@ -1,8 +1,8 @@
 import React from 'react'
 
+import fish from './fish.jpg'
 import {intlable} from 'react-intlable'
 import styles from './Fish.css'
-import fish from './fish.jpg'
 
 const Greeting = ({formatMessage}) => (
     <div className={styles.main}>

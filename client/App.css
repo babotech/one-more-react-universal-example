@@ -10,17 +10,22 @@ html, body, .app {
 
 .app {
   display: inline-block;
-  animation: AnimationName 6s ease infinite;
-
-  background: linear-gradient(225deg, #fff306, #e8c605, #ffc107, #e89805, #ff8b06);
-  background-color: #FFC107;
+  animation: AnimationName 24s ease infinite;
+  background: linear-gradient(270deg, #ffbc4d, #68e8b6, #F2C6E3, #FFE766);
   background-size: 1000% 1000%;
+  padding: 50px 0 0 45px;
+}
+
+.desc {
+  width: 20%;
+  margin-bottom: 20px;
+  line-height: 1.5;
 }
 
 @keyframes AnimationName {
-  0%{background-position:11% 0%}
-  50%{background-position:90% 100%}
-  100%{background-position:11% 0%}
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
 }
 
 .links {

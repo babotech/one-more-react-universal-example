@@ -4,11 +4,12 @@ import './assets/fonts/fonts.css'
 import {Link} from 'react-router'
 import React from 'react'
 import {connect} from 'react-redux'
+import {intlable} from 'react-intlable'
 
 import styles from './App.css'
 
 
-const App = ({children}) => {
+const App = ({children, formatMessage}) => {
     const links = [
         { pathname: `/`, display: `/`},
         { pathname: `/greeting`, display: `/greeting`},
@@ -21,17 +22,19 @@ const App = ({children}) => {
 
     return (
         <div className={styles.app}>
-            <h1>Menu</h1>
+            <h1>{formatMessage(`text`)}</h1>
+            <p className={styles.desc}>{formatMessage(`desc`)}</p>
+            <h3>{formatMessage(`menu`)}</h3>
             <div className={styles.links}>{links}</div>
             <br />
-            <h2>
-                <a href="/?locale=ru">RU</a>
+            <h3>
+                <a href="/?locale=ru">{formatMessage(`ru`)}</a>
                 <span> / </span>
-                <a href="/">EN</a>
-            </h2>
+                <a href="/">{formatMessage(`en`)}</a>
+            </h3>
             {children}
         </div>
     )
 }
 
-export default connect(state => ({ routerState: state.router }))(App)
+export default connect(state => ({ routerState: state.router }))(intlable(App))

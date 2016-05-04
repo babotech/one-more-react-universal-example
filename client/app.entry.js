@@ -7,8 +7,8 @@ import ReactDOM from 'react-dom'
 import createHistory from 'history/lib/createBrowserHistory'
 import locales from './locales'
 import { ready } from 'react-intlable'
-import reducer from '../shared/reducer'
-import routes from '../shared/routes'
+import reducer from './reducer'
+import routes from './routes'
 
 
 const locale = window.__LOCALE__

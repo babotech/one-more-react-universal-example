@@ -11,7 +11,7 @@ module.exports = {
     context: path.resolve(__dirname, '..'),
 
     entry: {
-        app: path.resolve('shared', 'routes.js')
+        app: path.resolve('client', 'routes.js')
     },
 
     target: 'node',

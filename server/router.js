@@ -7,7 +7,7 @@ import { ReduxRouter } from 'redux-router'
 import { createMemoryHistory } from 'history'
 import { createStore } from 'redux'
 import qs from 'query-string'
-import reducer from '../shared/reducer'
+import reducer from '../client/reducer'
 import render from './render-view'
 import routes from './dist/routes'
 
