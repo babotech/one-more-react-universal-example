@@ -12,7 +12,6 @@ const App = ({children}) => {
     const links = [
         { pathname: `/`, display: `/`},
         { pathname: `/greeting`, display: `/greeting`},
-        { pathname: `/greeting`, query: { locale: `ru` }, display: `/greeting?locale=ru`},
         { pathname: `/fish`, display: `/fish`}
     ].map((l, i) =>
         <p key={i}>
@@ -24,6 +23,12 @@ const App = ({children}) => {
         <div className={styles.app}>
             <h1>Menu</h1>
             <div className={styles.links}>{links}</div>
+            <br />
+            <h2>
+                <a href="/?locale=ru">RU</a>
+                <span> / </span>
+                <a href="/">EN</a>
+            </h2>
             {children}
         </div>
     )
