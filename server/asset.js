@@ -9,7 +9,8 @@ export default {
         assetsFile = assetsFile || fs.readFileSync(path.resolve(__dirname, config.source, `webpack-assets.json`))
 
         const assets = JSON.parse(assetsFile)
+        const src = assets[entry][ext]
 
-        return assets[entry][ext]
+        return src ? src : ``
     }
 }

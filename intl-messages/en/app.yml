@@ -1,2 +1,7 @@
 greeting: That's it!
 text: Universal rendering with React
+fish: Le Poisson
+menu: Menu
+ru: RU
+en: EN
+desc: This is an example of react/redux, server-side rendering, and redux-router. Also, you can change application language by clicking RU/ENG links.

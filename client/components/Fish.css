@@ -1,0 +1,35 @@
+.main {
+  position: relative;
+  top: 0px;
+
+  width: 40%;
+  height: 40%;
+  margin: auto;
+
+  color: black;
+  text-shadow: 6px 6px 0 red,
+              -3px -3px 0 blue,
+              3px -6px 0 green,
+              -3px 3px 0 orange,
+              3px 3px 0 magenta;
+
+  font: 900 50px Times, serif;
+
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+  -webkit-text-stroke: 1px gray;
+  text-stroke: 1px gray;
+}
+
+.img {
+  width: 100%;
+
+  animation: spin 20s infinite;
+
+  border: 150px solid #fff;
+}
+
+@keyframes spin {
+    from {transform: rotateZ(0deg);}
+    to {transform: rotateZ(360deg);}
+}

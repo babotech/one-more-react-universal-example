@@ -1,4 +1,4 @@
-FROM node:5.6
+FROM node:latest
 
 EXPOSE  7000
 

@@ -1,3 +1,3 @@
-/**
- * Created by galkinrost on 2/21/16.
- */
+global.Intl = require(`intl`)
+require(`intl/locale-data/jsonp/ru`)
+require(`intl/locale-data/jsonp/en`)

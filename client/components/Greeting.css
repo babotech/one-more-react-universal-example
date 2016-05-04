@@ -1,4 +1,29 @@
+.main {
+  position: absolute;
+  top: -150px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  max-width: 50%;
+  max-height: 10%;
+  margin: auto;
+
+  text-align: center;
+}
+
 .greeting {
-  font: bold 50px Roboto;
   color: #FFFFFF;
+  text-shadow: 3px 3px 0 #000,
+              -1px -1px 0 #000,
+              1px -1px 0 #000,
+              -1px 1px 0 #000,
+              1px 1px 0 #000;
+
+  font: bold 80px Roboto, sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+  -webkit-text-stroke: 1px black;
+  text-stroke: 1px black;
 }

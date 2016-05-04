@@ -11,14 +11,14 @@ module.exports = {
     context: path.resolve(__dirname, '..'),
 
     entry: {
-        app: path.resolve('client', 'App.js')
+        app: path.resolve('client', 'routes.js')
     },
 
     target: 'node',
 
     output: {
         path: config.source,
-        filename: 'AppServer.js',
+        filename: 'routes.js',
         libraryTarget: 'commonjs2',
         publicPath: config.publicPath
     },

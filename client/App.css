@@ -1,10 +1,39 @@
-html {
-  background-color: #FFC107;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body, .app {
+  width: 100%;
+  height: 100%;
 }
 
 .app {
-  width: 860px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+  display: inline-block;
+  animation: AnimationName 24s ease infinite;
+  background: linear-gradient(270deg, #ffbc4d, #68e8b6, #F2C6E3, #FFE766);
+  background-size: 1000% 1000%;
+  padding: 50px 0 0 45px;
+}
+
+.desc {
+  width: 20%;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+.links {
+  padding: 0 20px;
+  line-height: 30px;
+  font-size: 20px;
+}
+
+.links a {
+  color: black;
 }
